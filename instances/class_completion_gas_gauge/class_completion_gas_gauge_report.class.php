@@ -447,7 +447,13 @@ class class_completion_gas_gauge_report extends gas_gauge_table_report {
     function get_report_sql_groups() {
         return "crs.id,
                 cls.id,
-                stu.userid";
+                stu.userid,
+                stu.completestatusid,
+                u.firstname,
+                u.lastname,
+                gg.finalgrade,
+                u.id,
+                gi.grademax, stu.grade";
     }
 
     /**
