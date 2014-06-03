@@ -498,7 +498,7 @@ class class_roster_report extends table_report {
      *                  or '' if no grouping should be used
      */
     function get_report_sql_groups() {
-        return 'clsenr.userid';
+        return 'clsenr.userid, usr.lastname,usr.lastname,usr.firstname,usr.email,usr.id';
     }
     /**
      * Determines whether the current user can view this report, based on being logged in
